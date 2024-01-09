@@ -1,0 +1,1859 @@
+{
+    "_id": "62b41da7022a791200000002",
+    "name": "Authorization",
+    "slug": "jetsondashboard",
+    "organizationId": "Org",
+    "isPublic": true,
+    "isShowPlatformTag": true,
+    "createdAt": "2023-03-02T13:50:57.853Z",
+    "updatedAt": "2023-12-19T11:40:25.119Z",
+    "deleted": false,
+    "pages": [
+        {
+            "_id": "Login",
+            "isDefault": true
+        },
+        {
+            "_id": "Registration",
+            "isDefault": false
+        },
+        {
+            "_id": "Registered",
+            "isDefault": false
+        },
+        {
+            "_id": "Modules",
+            "isDefault": false
+        },
+        {
+            "_id": "AdminRoles",
+            "isDefault": false
+        },
+        {
+            "_id": "User Management",
+            "isDefault": false
+        },
+        {
+            "_id": "queryToResetPassword",
+            "isDefault": false
+        },
+        {
+            "_id": "ResetPassword",
+            "isDefault": false
+        },
+        {
+            "_id": "Info",
+            "isDefault": false
+        },
+        {
+            "_id": "PasswordChanged",
+            "isDefault": false
+        },
+        {
+            "_id": "Catalog",
+            "isDefault": false
+        },
+        {
+            "_id": "Series",
+            "isDefault": false
+        },
+        {
+            "_id": "Attributes",
+            "isDefault": false
+        },
+        {
+            "_id": "AttributeDetails",
+            "isDefault": false
+        },
+        {
+            "_id": "ProductCreate",
+            "isDefault": false
+        },
+        {
+            "_id": "ProductEdit",
+            "isDefault": false
+        },
+        {
+            "_id": "Product",
+            "isDefault": false
+        }
+    ],
+    "policies": [
+        {
+            "permission": "makePublic:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "read:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "publish:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:applications",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "global_setting": {
+        "favicon": "https://ubraine.com/wp-content/uploads/2018/09/cropped-ubraine_favicon-32x32.png",
+        "title": "UBOS",
+        "css": "https://authnr-7847-6565c9228ab32b120000003e.ubos.tech/css"
+    },
+    "lastDeployedAt": "2022-10-19T15:59:36.363Z",
+    "is_custom_auth": true,
+    "auth_mode_setting": {
+        "login_id": "Login",
+        "auth_node": "https://authnr-7847-6565c9228ab32b120000003e.ubos.tech/check_token",
+        "registry_id": "Registration",
+        "other_pages": [
+            "queryToResetPassword",
+            "ResetPassword",
+            "Registered",
+            "PasswordChanged",
+            "Info"
+        ]
+    },
+    "settings_data": {
+        "httpIns": [
+            {
+                "label": "POST | registration | /registration",
+                "value": {
+                    "url": "/registration",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST | createRole | /createRole",
+                "value": {
+                    "url": "/createRole",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET | getRoles | /getRoles",
+                "value": {
+                    "url": "/getRoles",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST | addModuleToRole | /addModuleToRole",
+                "value": {
+                    "url": "/addModuleToRole",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT | updateRole | /updateRole",
+                "value": {
+                    "url": "/updateRole",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "DELETE | deleteModuleFromRole | /deleteModuleFromRole",
+                "value": {
+                    "url": "/deleteModuleFromRole",
+                    "method": "delete",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "DELETE | deleteRole | /deleteRole",
+                "value": {
+                    "url": "/deleteRole",
+                    "method": "delete",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET | getAllRoles | /getAllRoles | Use in: User Management",
+                "value": {
+                    "url": "/getAllRoles",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST | createParentModule | /createParentModule",
+                "value": {
+                    "url": "/createParentModule",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET | getModules | /getModules",
+                "value": {
+                    "url": "/getModules",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST | createChildModule | /createChildModule",
+                "value": {
+                    "url": "/createChildModule",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "DELETE | deleteChildModule | /deleteChildModule",
+                "value": {
+                    "url": "/deleteChildModule",
+                    "method": "delete",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT | updateChildModule | /updateChildModule",
+                "value": {
+                    "url": "/updateChildModule",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET | getUsers | /getUsers",
+                "value": {
+                    "url": "/getUsers",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT | editUserRole | /editUserRole",
+                "value": {
+                    "url": "/editUserRole",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "DELETE | deleteUser | /deleteUser",
+                "value": {
+                    "url": "/deleteUser",
+                    "method": "delete",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST | createUser | /createUser",
+                "value": {
+                    "url": "/createUser",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getLogs",
+                "value": {
+                    "url": "/getLogs",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getLogsAdmin",
+                "value": {
+                    "url": "/getLogsAdmin",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /deleteAdminRole",
+                "value": {
+                    "url": "/deleteAdminRole",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /addAdminRole",
+                "value": {
+                    "url": "/addAdminRole",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /updatePassword",
+                "value": {
+                    "url": "/updatePassword",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "DELETE |  | /deleteAdmin",
+                "value": {
+                    "url": "/deleteAdmin",
+                    "method": "delete",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT |  | /updateAdmin",
+                "value": {
+                    "url": "/updateAdmin",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getAdmin",
+                "value": {
+                    "url": "/getAdmin",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET |  | /getAdmins",
+                "value": {
+                    "url": "/getAdmins",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST |  | /createAdmin",
+                "value": {
+                    "url": "/createAdmin",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST | login | /login",
+                "value": {
+                    "url": "/login",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST | check_token | /check_token",
+                "value": {
+                    "url": "/check_token",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST | signout | /signout",
+                "value": {
+                    "url": "/signout",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST | repeatRegisterEmail | /repeatRegisterEmail",
+                "value": {
+                    "url": "/repeatRegisterEmail",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET | verifyToken | /verifyToken",
+                "value": {
+                    "url": "/verifyToken",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "GET | queryToResetPassword | /queryToResetPassword",
+                "value": {
+                    "url": "/queryToResetPassword",
+                    "method": "get",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "POST | sendEmailForResetPassword | /sendEmailForResetPassword",
+                "value": {
+                    "url": "/sendEmailForResetPassword",
+                    "method": "post",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT | resetPassword | /resetPassword",
+                "value": {
+                    "url": "/resetPassword",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "DELETE |  | /deleteModule",
+                "value": {
+                    "url": "/deleteModule",
+                    "method": "delete",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            },
+            {
+                "label": "PUT | updateParentModule | /updateParentModule",
+                "value": {
+                    "url": "/updateParentModule",
+                    "method": "put",
+                    "datasource": {
+                        "datasourceConfiguration": {
+                            "url": "https://nodered-63735d50fd02061100000009.ubos.tech"
+                        },
+                        "id": "63735d8278cad60011db471c",
+                        "invalids": [],
+                        "isValid": true,
+                        "name": "nodeRed",
+                        "new": false,
+                        "type": "api",
+                        "organizationId": "Org",
+                        "pluginId": "API",
+                        "userPermissions": [
+                            "execute:datasources",
+                            "read:datasources",
+                            "manage:datasources"
+                        ],
+                        "settings_data": {
+                            "gitName": "",
+                            "projectName": "nodeRed",
+                            "systemType": "latest",
+                            "gitUrl": "",
+                            "gitPassword": "",
+                            "urlNodeRed": "https://nodered-63735d50fd02061100000009.ubos.tech",
+                            "serviceId": "nodered63735d50fd02061100000009ubraine",
+                            "applicationId": "63735d50fd02061100000009",
+                            "env": [],
+                            "status": "ready"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "isMenu": false,
+    "function_dsl": [
+        {
+            "isVisible": true,
+            "backgroundColor": "linear-gradient(to right, #4169E1, #8A2BE2)",
+            "widgetName": "HeaderFunction",
+            "containerStyle": "card",
+            "borderColor": "#FFFFFF",
+            "borderWidth": "",
+            "borderRadius": "10",
+            "boxShadow": "NONE",
+            "animateLoading": true,
+            "dontLookPage": [
+                "Login",
+                "Registration",
+                "ResetPassword",
+                "queryToResetPassword",
+                "Registered",
+                "LoginTest",
+                "Info",
+                "PasswordChanged"
+            ],
+            "children": [
+                {
+                    "isVisible": true,
+                    "widgetName": "Canvas11",
+                    "version": 1,
+                    "detachFromLayout": true,
+                    "type": "CANVAS_WIDGET",
+                    "hideCard": true,
+                    "displayName": "Canvas",
+                    "key": "n20f28ans6",
+                    "containerStyle": "none",
+                    "canExtend": false,
+                    "children": [
+                        {
+                            "isVisible": true,
+                            "text": "Products",
+                            "fontSize": "PARAGRAPH",
+                            "fontStyle": "BOLD",
+                            "textAlign": "LEFT",
+                            "textColor": "#231F20",
+                            "truncateButtonColor": "#FFC13D",
+                            "widgetName": "NavLinkCopyCopyCopyCopyCopy",
+                            "shouldTruncate": false,
+                            "overflow": "NONE",
+                            "version": 1,
+                            "animateLoading": true,
+                            "type": "TEXT_WIDGET",
+                            "hideCard": false,
+                            "displayName": "Text",
+                            "key": "69j98hi5c5",
+                            "iconSVG": "/static/media/icon.97c59b52.svg",
+                            "widgetId": "lzqbgwjaho",
+                            "renderMode": "CANVAS",
+                            "isLoading": false,
+                            "parentColumnSpace": 15.40625,
+                            "parentRowSpace": 10,
+                            "leftColumn": 22,
+                            "rightColumn": 28,
+                            "topRow": 1,
+                            "bottomRow": 5,
+                            "parentId": "b8feb4cpvv",
+                            "onClick": "{{navigateTo('Product', {})}}",
+                            "dynamicBindingPathList": [],
+                            "dynamicTriggerPathList": [
+                                {
+                                    "key": "onClick"
+                                }
+                            ],
+                            "classStyle": "nav-link",
+                            "disableLink": true
+                        },
+                        {
+                            "isVisible": true,
+                            "text": "Attributes",
+                            "fontSize": "PARAGRAPH",
+                            "fontStyle": "BOLD",
+                            "textAlign": "LEFT",
+                            "textColor": "#231F20",
+                            "truncateButtonColor": "#FFC13D",
+                            "widgetName": "NavLinkCopyCopyCopyCopy",
+                            "shouldTruncate": false,
+                            "overflow": "NONE",
+                            "version": 1,
+                            "animateLoading": true,
+                            "type": "TEXT_WIDGET",
+                            "hideCard": false,
+                            "displayName": "Text",
+                            "key": "69j98hi5c5",
+                            "iconSVG": "/static/media/icon.97c59b52.svg",
+                            "widgetId": "ltt2yy09nf",
+                            "renderMode": "CANVAS",
+                            "isLoading": false,
+                            "parentColumnSpace": 15.40625,
+                            "parentRowSpace": 10,
+                            "leftColumn": 16,
+                            "rightColumn": 22,
+                            "topRow": 1,
+                            "bottomRow": 5,
+                            "parentId": "b8feb4cpvv",
+                            "onClick": "{{navigateTo('Attributes', {})}}",
+                            "dynamicBindingPathList": [],
+                            "dynamicTriggerPathList": [
+                                {
+                                    "key": "onClick"
+                                }
+                            ],
+                            "classStyle": "nav-link",
+                            "disableLink": true
+                        },
+                        {
+                            "isVisible": true,
+                            "text": "Series",
+                            "fontSize": "PARAGRAPH",
+                            "fontStyle": "BOLD",
+                            "textAlign": "LEFT",
+                            "textColor": "#231F20",
+                            "truncateButtonColor": "#FFC13D",
+                            "widgetName": "NavLinkCopyCopyCopy",
+                            "shouldTruncate": false,
+                            "overflow": "NONE",
+                            "version": 1,
+                            "animateLoading": true,
+                            "type": "TEXT_WIDGET",
+                            "hideCard": false,
+                            "displayName": "Text",
+                            "key": "69j98hi5c5",
+                            "iconSVG": "/static/media/icon.97c59b52.svg",
+                            "widgetId": "to6tju20d6",
+                            "renderMode": "CANVAS",
+                            "isLoading": false,
+                            "parentColumnSpace": 15.40625,
+                            "parentRowSpace": 10,
+                            "leftColumn": 12,
+                            "rightColumn": 16,
+                            "topRow": 1,
+                            "bottomRow": 5,
+                            "parentId": "b8feb4cpvv",
+                            "onClick": "{{navigateTo('Series', {})}}",
+                            "dynamicBindingPathList": [],
+                            "dynamicTriggerPathList": [
+                                {
+                                    "key": "onClick"
+                                }
+                            ],
+                            "classStyle": "nav-link",
+                            "disableLink": true
+                        },
+                        {
+                            "isVisible": true,
+                            "backgroundColor": "",
+                            "widgetName": "Container2",
+                            "containerStyle": "card",
+                            "borderColor": "transparent",
+                            "borderWidth": "0",
+                            "borderRadius": "0",
+                            "boxShadow": "NONE",
+                            "animateLoading": true,
+                            "children": [
+                                {
+                                    "isVisible": true,
+                                    "widgetName": "Canvas15",
+                                    "version": 1,
+                                    "detachFromLayout": true,
+                                    "type": "CANVAS_WIDGET",
+                                    "hideCard": true,
+                                    "displayName": "Canvas",
+                                    "key": "gna3me1184",
+                                    "containerStyle": "none",
+                                    "canExtend": false,
+                                    "children": [
+                                        {
+                                            "isVisible": true,
+                                            "iconName": "log-out",
+                                            "borderRadius": "CIRCLE",
+                                            "boxShadow": "NONE",
+                                            "buttonColor": "#2E3D49",
+                                            "buttonVariant": "PRIMARY",
+                                            "isDisabled": false,
+                                            "widgetName": "headerIconButton",
+                                            "version": 1,
+                                            "animateLoading": true,
+                                            "type": "ICON_BUTTON_WIDGET",
+                                            "hideCard": false,
+                                            "displayName": "Icon Button",
+                                            "key": "e6pjegiytc",
+                                            "iconSVG": "/static/media/icon.1a0c634a.svg",
+                                            "widgetId": "gbddqq73zv",
+                                            "renderMode": "CANVAS",
+                                            "isLoading": false,
+                                            "parentColumnSpace": 20.74365234375,
+                                            "parentRowSpace": 10,
+                                            "leftColumn": 59,
+                                            "rightColumn": 64,
+                                            "topRow": 0,
+                                            "bottomRow": 4,
+                                            "parentId": "mzdbtrk72f",
+                                            "dynamicBindingPathList": [],
+                                            "dynamicTriggerPathList": [
+                                                {
+                                                    "key": "onClick"
+                                                }
+                                            ],
+                                            "classStyle": "",
+                                            "onClick": "{{navigateTo('Login', {})}}",
+                                            "dynamicPropertyPathList": []
+                                        }
+                                    ],
+                                    "minHeight": 400,
+                                    "widgetId": "mzdbtrk72f",
+                                    "renderMode": "CANVAS",
+                                    "isLoading": false,
+                                    "parentColumnSpace": 1,
+                                    "parentRowSpace": 1,
+                                    "leftColumn": 0,
+                                    "rightColumn": 511.875,
+                                    "topRow": 0,
+                                    "bottomRow": 420,
+                                    "parentId": "ririx2zd0j"
+                                }
+                            ],
+                            "version": 1,
+                            "classStyle": "header__container",
+                            "type": "CONTAINER_WIDGET",
+                            "hideCard": false,
+                            "displayName": "Container",
+                            "key": "ec2q72fkvq",
+                            "iconSVG": "/static/media/icon.1977dca3.svg",
+                            "isCanvas": true,
+                            "widgetId": "ririx2zd0j",
+                            "renderMode": "CANVAS",
+                            "isLoading": false,
+                            "parentColumnSpace": 21.328125,
+                            "parentRowSpace": 10,
+                            "leftColumn": 36,
+                            "rightColumn": 64,
+                            "topRow": 0,
+                            "bottomRow": 6,
+                            "parentId": "b8feb4cpvv",
+                            "shouldScrollContents": false,
+                            "dynamicBindingPathList": [],
+                            "dynamicTriggerPathList": []
+                        },
+                        {
+                            "isVisible": true,
+                            "defaultImage": "https://cdn-icons-png.flaticon.com/512/1995/1995670.png",
+                            "imageShape": "RECTANGLE",
+                            "maxZoomLevel": 1,
+                            "enableRotation": false,
+                            "enableDownload": false,
+                            "objectFit": "contain",
+                            "image": "https://www.svgrepo.com/show/68023/logo.svg",
+                            "widgetName": "SidebarImage",
+                            "version": 1,
+                            "animateLoading": true,
+                            "type": "IMAGE_WIDGET",
+                            "hideCard": false,
+                            "displayName": "Image",
+                            "key": "gwr3b22n62",
+                            "iconSVG": "/static/media/icon.52d8fb96.svg",
+                            "widgetId": "n5e51viw4d",
+                            "renderMode": "CANVAS",
+                            "isLoading": false,
+                            "parentColumnSpace": 23.234375,
+                            "parentRowSpace": 10,
+                            "leftColumn": 0,
+                            "rightColumn": 5,
+                            "topRow": 0,
+                            "bottomRow": 6,
+                            "parentId": "b8feb4cpvv",
+                            "dynamicBindingPathList": [],
+                            "dynamicTriggerPathList": [
+                                {
+                                    "key": "onClick"
+                                }
+                            ],
+                            "classStyle": "",
+                            "onClick": "{{navigateTo('User Management', {})}}"
+                        },
+                        {
+                            "isVisible": true,
+                            "text": "Categories",
+                            "fontSize": "PARAGRAPH",
+                            "fontStyle": "BOLD",
+                            "textAlign": "LEFT",
+                            "textColor": "#231F20",
+                            "truncateButtonColor": "#FFC13D",
+                            "widgetName": "NavLink",
+                            "shouldTruncate": false,
+                            "overflow": "NONE",
+                            "version": 1,
+                            "animateLoading": true,
+                            "type": "TEXT_WIDGET",
+                            "hideCard": false,
+                            "displayName": "Text",
+                            "key": "69j98hi5c5",
+                            "iconSVG": "/static/media/icon.97c59b52.svg",
+                            "widgetId": "7e5gde5mtn",
+                            "renderMode": "CANVAS",
+                            "isLoading": false,
+                            "parentColumnSpace": 15.40625,
+                            "parentRowSpace": 10,
+                            "leftColumn": 6,
+                            "rightColumn": 12,
+                            "topRow": 1,
+                            "bottomRow": 5,
+                            "parentId": "b8feb4cpvv",
+                            "onClick": "{{navigateTo('Catalog', {})}}",
+                            "dynamicBindingPathList": [],
+                            "dynamicTriggerPathList": [
+                                {
+                                    "key": "onClick"
+                                }
+                            ],
+                            "classStyle": "nav-link",
+                            "disableLink": true
+                        }
+                    ],
+                    "minHeight": 400,
+                    "widgetId": "b8feb4cpvv",
+                    "renderMode": "CANVAS",
+                    "isLoading": false,
+                    "parentColumnSpace": 1,
+                    "parentRowSpace": 1,
+                    "leftColumn": 0,
+                    "rightColumn": 557.625,
+                    "topRow": 0,
+                    "bottomRow": 390,
+                    "parentId": "ss4bddp965"
+                }
+            ],
+            "version": 1,
+            "type": "FUNCTION_WIDGET",
+            "hideCard": false,
+            "displayName": "Function",
+            "key": "i74be8h1qm",
+            "iconSVG": "/static/media/icon.1977dca3.svg",
+            "isCanvas": true,
+            "widgetId": "ss4bddp965",
+            "renderMode": "CANVAS",
+            "isLoading": false,
+            "parentColumnSpace": 23.234375,
+            "parentRowSpace": 10,
+            "leftColumn": 0,
+            "rightColumn": 64,
+            "topRow": 0,
+            "bottomRow": 8,
+            "parentId": "0",
+            "dynamicBindingPathList": [],
+            "dynamicTriggerPathList": [],
+            "classStyle": "",
+            "shouldScrollContents": false
+        }
+    ],
+    "version": "V1",
+    "gitApplicationMetadata": {
+        "browserSupportedRemoteUrl": "https://github.com/UBOS-tech/ubos-template-woo-catalog-ui",
+        "defaultApplicationId": "jetsondashboard",
+        "defaultBranchName": "main",
+        "isRepoPrivate": true,
+        "remoteUrl": "git@github.com:UBOS-tech/ubos-template-woo-catalog-ui.git",
+        "repoName": "ubos-template-woo-catalog-ui"
+    }
+}

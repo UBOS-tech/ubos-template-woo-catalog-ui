@@ -1,0 +1,632 @@
+[
+    {
+        "_id": "6364e18e65d44c1100000006",
+        "name": "JSObject1",
+        "pageId": "User Management",
+        "organizationId": "Org",
+        "body": "export default {\n\teditUserRole: async () => {\n\t\tawait editUserRole.run();\n\t\tcloseModal('ModalEditRole');\n\t\tgetUsers.run();\n\t},\n\tcreateUser: async () => {\n\t\tawait createUser.run();\n\t\tcloseModal('ModalCreateUser');\n\t\tgetUsers.run();\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "_id": "6364e18ec2e17400119dc7f1",
+                "name": "editUserRole",
+                "pageId": "User Management",
+                "organizationId": "Org",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "async () => {\n\t\tawait editUserRole.run();\n\t\tcloseModal('ModalEditRole');\n\t\tgetUsers.run();\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "collectionId": "6364e18e65d44c1100000006",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "organizationId": "Org",
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun2",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS",
+                "id": "6364e18ec2e17400119dc7f1"
+            },
+            {
+                "name": "createUser",
+                "collectionId": "6364e18e65d44c1100000006",
+                "executeOnLoad": false,
+                "pageId": "User Management",
+                "organizationId": "Org",
+                "actionConfiguration": {
+                    "body": "async () => {\n\t\tawait createUser.run();\n\t\tcloseModal('ModalCreateUser');\n\t\tgetUsers.run();\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 0,
+                    "jsArguments": []
+                }
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "id": "6364e18e65d44c1100000006",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": [],
+        "pluginId": "JS",
+        "workspaceId": "Org"
+    },
+    {
+        "id": "65672a7b0d2605ad0fdce2fa",
+        "name": "JSObject1",
+        "pageId": "Catalog",
+        "body": "export default {\n\topenEditWindow: () => {\n\t\tshowModal(\"EditModal\");\n\t\tGetCategory.run();\n\t},\n\tonEditConfirm:()=>{\n\t\tUpdateCategory.run();\t\t\t\n\t\tGetCategories.run();\n\t\tcloseModal(\"EditModal\");\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "name": "openEditWindow",
+                "pageId": "Catalog",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\n\t\tshowModal(\"EditModal\");\n\t\tGetCategory.run();\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "65672a7b0d2605ad0fdce2fb",
+                "id": "65672a7b0d2605ad0fdce2fb",
+                "collectionId": "65672a7b0d2605ad0fdce2fa",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.openEditWindow",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "onEditConfirm",
+                "collectionId": "65672a7b0d2605ad0fdce2fa",
+                "executeOnLoad": false,
+                "pageId": "Catalog",
+                "actionConfiguration": {
+                    "body": "()=>{\n\t\tUpdateCategory.run();\t\t\t\n\t\tGetCategories.run();\n\t\tcloseModal(\"EditModal\");\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "656744230d2605ad0fdce2fd",
+                "id": "656744230d2605ad0fdce2fd",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.onEditConfirm",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "()=>{\n\t\t\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "65672a7b0d2605ad0fdce2fa",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    },
+    {
+        "id": "6569eef20d2605ad0fdce30e",
+        "name": "JSObject1",
+        "pageId": "Series",
+        "body": "export default {\n\topenEditWindow: () => {\n\t\tshowModal(\"EditModal\");\n\t\tGetCategory.run();\n\t},\n\tonEditConfirm:()=>{\n\t\tUpdateCategory.run();\t\t\t\n\t\tGetCategories.run();\n\t\tcloseModal(\"EditModal\");\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "name": "openEditWindow",
+                "pageId": "Series",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\n\t\tshowModal(\"EditModal\");\n\t\tGetCategory.run();\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "6569eef20d2605ad0fdce30f",
+                "id": "6569eef20d2605ad0fdce30f",
+                "collectionId": "6569eef20d2605ad0fdce30e",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.openEditWindow",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "onEditConfirm",
+                "collectionId": "6569eef20d2605ad0fdce30e",
+                "executeOnLoad": false,
+                "pageId": "Series",
+                "actionConfiguration": {
+                    "body": "()=>{\n\t\tUpdateCategory.run();\t\t\t\n\t\tGetCategories.run();\n\t\tcloseModal(\"EditModal\");\n\t}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "6569eef20d2605ad0fdce310",
+                "id": "6569eef20d2605ad0fdce310",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.onEditConfirm",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "()=>{\n\t\t\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "6569eef20d2605ad0fdce30e",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    },
+    {
+        "id": "656deda03c06cfb86e2664e6",
+        "name": "JSObject1",
+        "pageId": "Attributes",
+        "body": "export default {\n\topenEditWindow: () => {\n\t\tshowModal(\"EditModal\");\n\t\tGetCategory.run();\n\t},\n\tonEditConfirm:()=>{\n\t\tUpdateCategory.run();\t\t\t\n\t\tGetCategories.run();\n\t\tcloseModal(\"EditModal\");\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "name": "openEditWindow",
+                "pageId": "Catalog Copy",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\n\t\tshowModal(\"EditModal\");\n\t\tGetCategory.run();\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "656deda03c06cfb86e2664e7",
+                "id": "656deda03c06cfb86e2664e7",
+                "collectionId": "656deda03c06cfb86e2664e6",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.openEditWindow",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "onEditConfirm",
+                "collectionId": "656deda03c06cfb86e2664e6",
+                "executeOnLoad": false,
+                "pageId": "Catalog Copy",
+                "actionConfiguration": {
+                    "body": "()=>{\n\t\tUpdateCategory.run();\t\t\t\n\t\tGetCategories.run();\n\t\tcloseModal(\"EditModal\");\n\t}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "656deda03c06cfb86e2664e8",
+                "id": "656deda03c06cfb86e2664e8",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.onEditConfirm",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "()=>{\n\t\t\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "656deda03c06cfb86e2664e6",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    },
+    {
+        "id": "656ee9673c06cfb86e2664f3",
+        "name": "JSObject1",
+        "pageId": "AttributeDetails",
+        "body": "export default {\n\topenEditWindow: () => {\n\t\tshowModal(\"EditModal\");\n\t\tGetCategory.run();\n\t},\n\tonEditConfirm:()=>{\n\t\tUpdateCategory.run();\t\t\t\n\t\tGetCategories.run();\n\t\tcloseModal(\"EditModal\");\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "name": "openEditWindow",
+                "pageId": "Attributes Copy",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\n\t\tshowModal(\"EditModal\");\n\t\tGetCategory.run();\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "656ee9673c06cfb86e2664f4",
+                "id": "656ee9673c06cfb86e2664f4",
+                "collectionId": "656ee9673c06cfb86e2664f3",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.openEditWindow",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "onEditConfirm",
+                "collectionId": "656ee9673c06cfb86e2664f3",
+                "executeOnLoad": false,
+                "pageId": "Attributes Copy",
+                "actionConfiguration": {
+                    "body": "()=>{\n\t\tUpdateCategory.run();\t\t\t\n\t\tGetCategories.run();\n\t\tcloseModal(\"EditModal\");\n\t}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "656ee9673c06cfb86e2664f5",
+                "id": "656ee9673c06cfb86e2664f5",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.onEditConfirm",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "()=>{\n\t\t\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "656ee9673c06cfb86e2664f3",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    },
+    {
+        "id": "6571d9b33c06cfb86e266512",
+        "name": "JSObject1",
+        "pageId": "Product",
+        "body": "export default {\n\topenEditWindow: () => {\n\t\tshowModal(\"EditModal\");\n\t\tGetCategory.run();\n\t},\n\tonEditConfirm:()=>{\n\t\tUpdateCategory.run();\t\t\t\n\t\tGetCategories.run();\n\t\tcloseModal(\"EditModal\");\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "name": "openEditWindow",
+                "pageId": "Attributes Copy",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\n\t\tshowModal(\"EditModal\");\n\t\tGetCategory.run();\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "6571d9b33c06cfb86e266513",
+                "id": "6571d9b33c06cfb86e266513",
+                "collectionId": "6571d9b33c06cfb86e266512",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.openEditWindow",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "onEditConfirm",
+                "collectionId": "6571d9b33c06cfb86e266512",
+                "executeOnLoad": false,
+                "pageId": "Attributes Copy",
+                "actionConfiguration": {
+                    "body": "()=>{\n\t\tUpdateCategory.run();\t\t\t\n\t\tGetCategories.run();\n\t\tcloseModal(\"EditModal\");\n\t}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "6571d9b33c06cfb86e266514",
+                "id": "6571d9b33c06cfb86e266514",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.onEditConfirm",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "()=>{\n\t\t\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "6571d9b33c06cfb86e266512",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    },
+    {
+        "id": "6576fc893c06cfb86e266518",
+        "name": "JSObject1",
+        "pageId": "ProductEdit",
+        "body": "export default {\nclearStore: async () => {\n\t\tstoreValue(\"images\", [], false)\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "name": "clearStore",
+                "pageId": "ProductEdit",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "async () => {\n\t\tstoreValue(\"images\", [], false)\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "6576fc893c06cfb86e26651a",
+                "id": "6576fc893c06cfb86e26651a",
+                "collectionId": "6576fc893c06cfb86e266518",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.clearStore",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS",
+                "executeOnClose": true
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "6576fc893c06cfb86e266518",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    },
+    {
+        "id": "6576fcb53c06cfb86e26651b",
+        "name": "JSObject1",
+        "pageId": "ProductCreate",
+        "body": "export default {\nclearStore: async () => {\n\t\tstoreValue(\"images\", [], false);\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "name": "clearStore",
+                "pageId": "ProductCreate",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "async () => {\n\t\tstoreValue(\"images\", [], false);\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "6576fcb53c06cfb86e26651d",
+                "id": "6576fcb53c06cfb86e26651d",
+                "collectionId": "6576fcb53c06cfb86e26651b",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.clearStore",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS",
+                "executeOnClose": true
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "6576fcb53c06cfb86e26651b",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    }
+]
